@@ -1,0 +1,6 @@
+ select min(A.a), max(B.b), C.c
+ from A, B, C
+ where A.a > B.b
+ group by C.c
+ having C.c > 0
+ 
